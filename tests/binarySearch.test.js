@@ -16,7 +16,7 @@ describe("Binary Search", () => {
     });
 
 
-    test('Should return -1 if the target is not found', () => {
+    it('Should return -1 if the target is not found', () => {
 
         const [targetRes, numOfComparisons] = binarySearch(genArr(1000), 1001);
     
