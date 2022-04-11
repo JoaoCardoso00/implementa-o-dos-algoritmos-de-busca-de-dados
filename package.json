@@ -5,6 +5,9 @@
   "repository": "https://github.com/JoaoCardoso00/implementacao-dos-algoritmos-de-busca-de-dados.git",
   "author": "Fabio <fabinhoneves09@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
   "dependencies": {
     "jest": "^27.5.1"
   }
