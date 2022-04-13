@@ -19,7 +19,7 @@ describe("Binary Search", () => {
     const [targetRes, numOfComparisons] = binarySearch(generateArray(ARRAY_LENGHT), 1001);
 
     console.log(
-      `Binary Search to find ${target}:\nIndex of target: ${targetRes}, number of comparisons: ${numOfComparisons}`
+      `Binary Search to find 1001:\nIndex of target: ${targetRes}, number of comparisons: ${numOfComparisons}`
     );
 
     expect(targetRes).toBe(-1);
