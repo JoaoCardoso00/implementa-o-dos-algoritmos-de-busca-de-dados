@@ -1,29 +1,25 @@
-const {tableSearch} = require("../algorithms/tableSearch/tableSearch.js");
-const {generateArray} = require("../lib/generateArray.js");
+const { tableSearch } = require("../algorithms/tableSearch/tableSearch.js");
+const { generateArray } = require("../lib/generateArray.js");
 
 describe("Table Search", () => {
-
     it('Should be able to find target with given array', () => {
 
-        const len = Math.floor(Math.random() * (1000 - 1 + 1) + 1);
-        const trg = Math.floor(Math.random() * (len - 1 + 1) + 1);
-        const [targetRes, nc] = tableSearch(generateArray(len), trg);
-    
-        console.log(`Index of target: ${targetRes}, number of comparisons: ${nc}`);
+        const size = Math.floor(Math.random() * (1000 - 1 + 1) + 1);
+        const target = Math.floor(Math.random() * (size - 1 + 1) + 1);
+        const array = generateArray(size);
+        const [result, comparisons] = tableSearch(array, target);
 
-        expect(targetRes).toBe(true);
-    
+        console.log(`TableSearch target ${target}:\n Index of target: ${result.index}, number of comparisons: ${comparisons}`);
+
+        expect(result.index).toBe(array.indexOf(target));
+
     });
-
-
     it('Should return false if the target is not found', () => {
+        const [result, comparisons] = tableSearch(generateArray(1000), 1001);
 
-        const [targetRes, nc] = tableSearch(generateArray(1000), 1001);
-    
-        console.log(`Index of target: ${targetRes}, number of comparisons: ${nc}`);
+        console.log(`TableSearch target ${target}:\n Index of target: ${result.index}, number of comparisons: ${comparisons}`);
 
-        expect(targetRes).toBe(false);
-    
+        expect(result.index).toBe(-1);
+
     })
-
 })

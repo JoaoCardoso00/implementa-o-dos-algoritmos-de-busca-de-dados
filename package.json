@@ -6,7 +6,7 @@
   "author": "Fabio <fabinhoneves09@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "jest"
+    "test": "jest --verbose"
   },
   "dependencies": {
     "jest": "^27.5.1"

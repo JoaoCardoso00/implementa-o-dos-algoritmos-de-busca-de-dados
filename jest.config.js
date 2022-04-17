@@ -4,5 +4,6 @@
  */
 
 module.exports = {
-  clearMocks: true
+  clearMocks: true,
+  testMatch: ["**/tests/*.test.js"]
 };
