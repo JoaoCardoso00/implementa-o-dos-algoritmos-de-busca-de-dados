@@ -17,7 +17,7 @@ describe("Table Search", () => {
     it('Should return false if the target is not found', () => {
         const [result, comparisons] = tableSearch(generateArray(1000), 1001);
 
-        console.log(`TableSearch target ${target}:\n Index of target: ${result.index}, number of comparisons: ${comparisons}`);
+        console.log(`TableSearch target 1001:\n Index of target: ${result.index}, number of comparisons: ${comparisons}`);
 
         expect(result.index).toBe(-1);
 
