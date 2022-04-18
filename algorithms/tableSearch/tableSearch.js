@@ -1,5 +1,4 @@
 /**
- * 
  * @param {Number[]} array : Array of number to find the target value
  * @param {Number} target : Target to be found in given array
  * @returns : An array with an object with the response and the number of comparisons
@@ -15,7 +14,6 @@ function tableSearch(array, target) {
     for (let i = 0; i < array.length; i++) {
         tablefrequency.push(array[i]);
     }
-
     if (tablefrequency[target] > 0) {
         numbercomparisons++;
         result.index = array.indexOf(target);
@@ -27,7 +25,5 @@ function tableSearch(array, target) {
         result.error = "Not found in array"
         return [result, numbercomparisons];
     }
-
 }
-
 module.exports = { tableSearch }

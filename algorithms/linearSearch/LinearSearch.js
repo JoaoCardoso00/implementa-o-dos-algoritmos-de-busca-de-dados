@@ -1,6 +1,5 @@
 class LinearSearch {
   /**
-   *
    * @param {Number[]} array : Array of Numbers ;
    * @param {Number} target : Target number to find inside array;
    * @returns : An array of objects, result and error, result is target number and if was found, error is type and message;
