@@ -21,5 +21,5 @@ yarn add --global jest
 
 ### Para realizar os teste, digite no terminal dentro da pasta do repositorio:
 ```
-jest --verbose
+jest --verbose 
 ```
